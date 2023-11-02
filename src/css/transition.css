@@ -10,9 +10,6 @@ html.is-animating .transition-main {
 	opacity: 0;
 }
 
-.logo {
-	transition: opacity 250ms, transform 250ms;
-}
 
 html.is-animating .logo {
 	opacity: 0.3;
