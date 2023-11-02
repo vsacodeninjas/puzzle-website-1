@@ -104,17 +104,6 @@ main a {
 	font-weight: bold;
 }
 
-.card:hover {
-	transform: scale(1.1);
-}
-
-.grid:hover:has(.card:hover) .card:not(:hover) {
-	background: rgba(0, 0, 0, 0.3);
-	transform: scale(0.95);
-	animation-duration: 0.5s;
-	transition: background 0.5s, transform 1s, all 0.3s;
-}
-
 .buttons {
 	margin-top: 2.25em;
 	margin-bottom: 1.75em;
@@ -153,6 +142,7 @@ main a {
 
 .card {
 	position: relative;
+	box-shadow: 0 0 5mm rgba(0,0,0,1);
 	border: 2px solid;
 	border-radius: var(--radius-1);
 	padding: .9em 1em 1.2em;
@@ -161,6 +151,16 @@ main a {
 
 .card:hover {
 	background: rgba(255, 255, 255, 0.05);
+	box-shadow: 0 0 10mm rgba(0,0,0,1);
+	transform: scale(1.1);
+}
+
+.grid:hover:has(.card:hover) .card:not(:hover) {
+	box-shadow: 0 0 7.5mm rgba(0,0,0,1);
+	background: rgba(0, 0, 0, 0.3);
+	transform: scale(0.95);
+	animation-duration: 0.5s;
+	transition: background 0.5s, transform 1s, all 0.3s;
 }
 
 .card>a {
