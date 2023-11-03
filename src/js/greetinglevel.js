@@ -6,7 +6,7 @@ dialog.innerHTML = `
 	<p>This is the ${dialog.getAttribute('page')} challenge!</p>
 	<h4>Good Luck!!!</h4>
 	<form method="dialog">
-		<button autofocus>Let's Go!</button>
+		<button autofocus>Let's Start!</button>
 	</form>
 </dialog>  
 `
