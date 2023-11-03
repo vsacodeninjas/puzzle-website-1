@@ -8,6 +8,7 @@ function finishLevel() {
 		<h4>Redirecting you to next level when presed the button!!!</h4>
 		<form method="dialog">
 			<button autofocus id="finishPressed">Let's Go!</button>
+			<button id="finishHomePressed">Go Home!</button>
 		</form>
 	</dialog>  
 	`
@@ -16,5 +17,8 @@ function finishLevel() {
 
 	document.querySelector('#finishPressed').addEventListener('click', () => {
 		window.location.href = nextlv
+	})
+	document.querySelector('#finishHomePressed').addEventListener('click', () => {
+		window.location.href = '/'
 	})
 }
