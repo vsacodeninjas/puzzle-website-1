@@ -1,0 +1,46 @@
+{
+  "name": "index.html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "postcss src/css/* --dir dest/css",
+    "watch:css": "postcss src/css/* --dir dest/css --watch",
+    "build:js": "babel src/js/* --out-dir dest/js",
+    "watch:js": "babel src/js/* --out-dir dest/js --watch",
+    "build": "yarn build:css & yarn build:js",
+    "watch": "yarn watch:css & yarn watch:js",
+    "dev": "./launch.sh",
+    "check": "./launch.sh check"
+  },
+  "keywords": [],
+  "author": "littleblack111",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "autoprefixer": "^10.4.16",
+    "babel-plugin-uglify": "^1.0.2",
+    "cssnano": "^6.0.1",
+    "doiuse": "^6.0.2",
+    "g": "^2.0.1",
+    "pixrem": "^5.0.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-color-rgba-fallback": "^4.0.0",
+    "postcss-fixes": "^3.0.0",
+    "postcss-import": "^15.1.0",
+    "postcss-loader": "^7.3.3",
+    "postcss-nested": "^6.0.1",
+    "postcss-opacity": "^5.0.0",
+    "postcss-preset-env": "^9.2.0",
+    "postcss-pseudoelements": "^5.0.0",
+    "postcss-vmin": "^3.0.0",
+    "postcss-will-change": "^4.0.1",
+    "rucksack-css": "^1.0.2"
+  },
+  "dependencies": {
+    "install": "^0.13.0"
+  }
+}
