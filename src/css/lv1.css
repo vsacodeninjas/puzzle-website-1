@@ -168,7 +168,7 @@ main a {
 	cursor: pointer;
 	background: rgba(255, 255, 255, 0.05);
 	box-shadow: 0 0 10mm rgba(0,0,0,1);
-	transform: scale(1.1);
+	transform: scale(1.05);
 	animation-name: blink;
 	animation-iteration-count: infinite;
 	opacity: 1;
