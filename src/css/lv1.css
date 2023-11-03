@@ -134,6 +134,18 @@ main a {
 	background: rgba(255, 255, 255, 0.05);
 }
 
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 .grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -147,6 +159,8 @@ main a {
 	border-radius: var(--radius-1);
 	padding: .9em 1em 1.2em;
 	transition: background 150ms;
+	animation-name: blink;
+	animation-iteration-count: infinite;
 }
 
 .card:hover {
@@ -154,6 +168,8 @@ main a {
 	background: rgba(255, 255, 255, 0.05);
 	box-shadow: 0 0 10mm rgba(0,0,0,1);
 	transform: scale(1.1);
+	animation-name: blink;
+	animation-iteration-count: infinite;
 }
 
 .grid:hover:has(.card:hover) .card:not(:hover) {
@@ -162,6 +178,8 @@ main a {
 	transform: scale(0.95);
 	animation-duration: 0.5s;
 	transition: background 0.5s, transform 1s, all 0.3s;
+	animation-name: blink;
+	animation-iteration-count: infinite;
 }
 
 .card>a {
