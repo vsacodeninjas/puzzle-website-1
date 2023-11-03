@@ -8,7 +8,7 @@ newElement.innerHTML = `
 <header id="navBarHeader">
 	<nav class="navBar">
 		<div class="hleft">
-			<a onclick="window.history.back()" id="btnBack" style="text-decoration: unset">Back<span></span></span></a>
+			<a onclick="window.history.back()" id="btnBack" style="text-decoration: unset; cursor: pointer;">Back<span></span></span></a>
 		</div>
 	</nav> 
 </header>
