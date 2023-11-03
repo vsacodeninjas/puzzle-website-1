@@ -1,0 +1,27 @@
+{
+	"rewrites": [
+	{
+		"source": "/lv1",
+		"destination": "/pages/lv1.html"
+	},
+	{
+		"source": "/lv2",
+		"destination": "/pages/lv2.html"
+	},
+	{
+		"source": "/lv3",
+		"destination": "/pages/lv3.html"
+	},
+	{
+		"source": "/lv4",
+		"destination": "/pages/lv4.html"
+	},
+	{
+		"source": "/lv5",
+		"destination": "/pages/lv5.html"
+	},
+	{
+		"source": "/lv6",
+		"destination": "/pages/lv6.html"
+	}]
+}
