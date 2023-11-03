@@ -1,4 +1,4 @@
 window.onload = function() {
-	var randomId = Math.floor(Math.random() * 6) + 1;
-	document.getElementById(randomId + "tryme").href = "/lv2";
+	const correct = document.getElementById(Math.floor(Math.random() * 6) + 1 + "tryme")
+	correct.href = "javascript:finishLevel(nextlv = '/lv2')";
 }
