@@ -365,3 +365,7 @@ main a {
 .intro {
 	font-weight: bold;
 }
+
+dialog::backdrop {
+	opacity: 0.75;
+}
