@@ -78,16 +78,6 @@ header {
 	padding: calc(0.5 + 1.5vw) 0;
 }
 
-.logo {
-	display: inline-block;
-	width: calc(6em + 3vw);
-	height: calc((6em + 3vw) * 0.43);
-	background: url(https://swup.js.org/assets/images/swup-logo-white.svg) no-repeat 0% 0%;
-	color: transparent;
-	-webkit-user-select: none;
-	user-select: none;
-}
-
 main {
 	margin-top: auto;
 	margin-bottom: auto;
