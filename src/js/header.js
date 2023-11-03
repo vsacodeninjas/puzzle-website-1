@@ -16,9 +16,9 @@ newElement.innerHTML = `
 header.appendChild(newElement);
 
 function goBack() {
-  if (window.history.length > 1) {
-    window.history.back();
-  } else {
-    window.location.replace('/');
-  }
+	if (window.history.length > 1) {
+		window.history.back();
+	} else {
+		window.location.replace('/');
+	}
 }
