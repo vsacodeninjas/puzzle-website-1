@@ -161,6 +161,7 @@ main a {
 	transition: background 150ms;
 	animation-name: blink;
 	animation-iteration-count: infinite;
+	opacity: 0.01;
 }
 
 .card:hover {
@@ -170,6 +171,9 @@ main a {
 	transform: scale(1.1);
 	animation-name: blink;
 	animation-iteration-count: infinite;
+	opacity: 1;
+	box-shadow: 0 0 100mm rgba(255, 238, 16,.7);
+	transition: all 0.3s;
 }
 
 .grid:hover:has(.card:hover) .card:not(:hover) {
@@ -177,9 +181,8 @@ main a {
 	background: rgba(0, 0, 0, 0.3);
 	transform: scale(0.95);
 	animation-duration: 0.5s;
+	opacity: 0;
 	transition: background 0.5s, transform 1s, all 0.3s;
-	animation-name: blink;
-	animation-iteration-count: infinite;
 }
 
 .card>a {
