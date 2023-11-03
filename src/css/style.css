@@ -366,6 +366,6 @@ main a {
 	font-weight: bold;
 }
 
-dialog::backdrop {
-	opacity: 0.75;
+dialog {
+	border-radius: 16px;
 }
