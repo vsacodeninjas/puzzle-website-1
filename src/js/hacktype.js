@@ -27,7 +27,7 @@ elements.forEach((element) => {
 		clearInterval(interval);
 	}
 
-	iteration += 1 / 5;
+	iteration += 2 / 3;
 	}, 20);
 
 	intervals.push(interval);
